@@ -683,3 +683,19 @@ p {
         padding: 0 1em;
     }
 }
+
+/* PROJECT TEMPLATE */
+.projectTemplateClicked {
+    display: none; 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(178, 25, 25); 
+    justify-content: center; 
+    align-items: center; 
+    color: #000;
+    transform: translate(-50%, -50%);
+    /* z-index: 1000;  */
+}
