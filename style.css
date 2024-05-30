@@ -11,7 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, p, li, form, figure, button {
+h1,
+h2,
+h3,
+p,
+li,
+form,
+figure,
+button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
 }
@@ -33,13 +40,13 @@ body {
     background-color: #091B29;
     color: #ffffff;
 }
-  
+
 section {
     min-height: 100vh;
     min-width: 100vh;
     color: white;
     scroll-snap-align: start;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 header {
@@ -110,22 +117,24 @@ nav {
     margin: 0;
     padding: 0;
     background-color: #06112A;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     /* position: sticky; */
     top: 0;
-    animation: footer_boarder_bottom 5s infinite;	
+    animation: footer_boarder_bottom 5s infinite;
 }
 
 @keyframes footer_boarder_bottom {
-    0%, 100%   { 
+
+    0%,
+    100% {
         border-bottom: 0.3em solid #141435;
     }
 
-    50% { 
+    50% {
         border-bottom: 0.3em solid #2727b2;
     }
 
-    80% { 
+    80% {
         border-bottom: 0.3em solid #4b4bd7;
     }
 }
@@ -186,7 +195,7 @@ li a {
     font-style: none;
 }
 
-.welcome-icons i:hover{ 
+.welcome-icons i:hover {
     color: #5757ec;
     text-decoration: none;
     font-size: 2em;
@@ -212,11 +221,11 @@ li a {
     margin-bottom: 1em;
     background-color: #394bb5;
     margin-right: 1em;
-    padding: 0.5em; 
+    padding: 0.5em;
     font-weight: bold;
     font-size: 1em;
     border-width: 0;
-    transition: all .2s,box-shadow .08s ease-in;
+    transition: all .2s, box-shadow .08s ease-in;
 }
 
 .homePageButtons:hover {
@@ -227,7 +236,7 @@ li a {
     transform: translateY(-3px);
 }
 
-.welcomeIcons a{
+.welcomeIcons a {
     color: #ffffff;
     text-decoration: none;
     font-size: 2em;
@@ -265,7 +274,7 @@ li a {
     text-align: center;
 }
 
-.serviceType {
+.projectType {
     /* width: 100%; */
     height: 100%;
     padding: 2em 1.0em;
@@ -276,14 +285,14 @@ li a {
     transition: 0.5s;
 }
 
-h1.ServiceName {
+h1.projectName {
     font-size: 2em;
     font-weight: 700;
     color: #1f194c;
     /* margin-bottom: 1em; */
 }
 
-h1.ServicePrice {
+h1.projectSub {
     /* margin-bottom: 1em; */
     color: #1f194c;
 }
@@ -353,6 +362,17 @@ p {
     }
 }
 
+.column:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.enlarged ~ .column {
+    transform: scale(0.9);
+    filter: blur(2px);
+    opacity: 0.5;
+}
+
 /* ABOUT SECTION */
 .container {
     display: flex;
@@ -394,7 +414,6 @@ p {
     letter-spacing: 1px;
 }
 
-
 .aboutImg {
     display: flex;
     justify-content: center;
@@ -425,13 +444,37 @@ p {
     /* border: 3px solid #FFF; */
 }
 
+.Aboutbuttons button {
+    text-decoration: none;
+    margin-top: 1em;
+    min-width: 5em;
+    margin-right: 1em;
+    font-weight: bold;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    cursor: pointer;
+    font-size: 100%;
+    height: 3em;
+    transition: all .2s, box-shadow .08s ease-in;
+}
+
+.Aboutbuttons button:hover {
+    background-color: #19017d;
+    transform: scale(1.1);
+    text-decoration: underline;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+    transform: translateY(-3px);
+}
+
 /* .textContainer:hover {
     background-position: 0 100%;
 } */
 
-.textContainer > div {
+.textContainer>div {
     max-height: 100%;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .textContainer:hover h1.aboutTitle {
@@ -449,7 +492,8 @@ p {
     align-items: center;
     justify-content: center;
     /* max-width: 80%; */
-    height: 100vh; /* Set the height of the grid section to the full viewport height */
+    height: 100vh;
+    /* Set the height of the grid section to the full viewport height */
 }
 
 .skillsTitle {
@@ -472,7 +516,7 @@ p {
 .Skillssubheading {
     font-size: 1.5em;
     margin-bottom: 1em;
-    color: #ff6347; 
+    color: #ff6347;
 }
 
 .skillsGrid {
@@ -522,17 +566,60 @@ p {
 }
 
 /* Skill Bar Colors */
-.html { width: 90%; background: linear-gradient(to right, #4caf50, #8bc34a); }
-.css { width: 70%; background: linear-gradient(to right, #2196f3, #03a9f4); }
-.javascript { width: 65%; background: linear-gradient(to right, #ffeb3b, #ffc107); }
-.python { width: 60%; background: linear-gradient(to right, #ff5722, #ff9800); }
-.sql { width: 75%; background: linear-gradient(to right, #673ab7, #9c27b0); }
-.acrobat { width: 60%; background: linear-gradient(to right, #e91e63, #f44336); }
-.ms-suite { width: 100%; background: linear-gradient(to right, #0078d7, #00bcf2); }
-.os { width: 70%; background: linear-gradient(to right, #ff5722, #ff9800); }
-.presentations { width: 100%; background: linear-gradient(to right, #ffeb3b, #ffc107); }
-.photoshop { width: 85%; background: linear-gradient(to right, #2196f3, #03a9f4); }
-.premiere { width: 70%; background: linear-gradient(to right, #673ab7, #9c27b0); }
+.html {
+    width: 90%;
+    background: linear-gradient(to right, #4caf50, #8bc34a);
+}
+
+.css {
+    width: 70%;
+    background: linear-gradient(to right, #2196f3, #03a9f4);
+}
+
+.javascript {
+    width: 65%;
+    background: linear-gradient(to right, #ffeb3b, #ffc107);
+}
+
+.python {
+    width: 60%;
+    background: linear-gradient(to right, #ff5722, #ff9800);
+}
+
+.sql {
+    width: 75%;
+    background: linear-gradient(to right, #673ab7, #9c27b0);
+}
+
+.acrobat {
+    width: 60%;
+    background: linear-gradient(to right, #e91e63, #f44336);
+}
+
+.ms-suite {
+    width: 100%;
+    background: linear-gradient(to right, #0078d7, #00bcf2);
+}
+
+.os {
+    width: 70%;
+    background: linear-gradient(to right, #ff5722, #ff9800);
+}
+
+.presentations {
+    width: 100%;
+    background: linear-gradient(to right, #ffeb3b, #ffc107);
+}
+
+.photoshop {
+    width: 85%;
+    background: linear-gradient(to right, #2196f3, #03a9f4);
+}
+
+.premiere {
+    width: 70%;
+    background: linear-gradient(to right, #673ab7, #9c27b0);
+}
 
 /* Hover and Focus Effects */
 .skill:hover .skill-value,
@@ -541,10 +628,10 @@ p {
 }
 
 /* NON ACTIVE */
-.skill:hover ~ .skill .skill-value,
-.skill:focus ~ .skill .skill-value,
-.skill:hover ~ .skill-bar .skill-value,
-.skill:focus ~ .skill-bar .skill-value,
+.skill:hover~.skill .skill-value,
+.skill:focus~.skill .skill-value,
+.skill:hover~.skill-bar .skill-value,
+.skill:focus~.skill-bar .skill-value,
 .skill-group:hover .skill:not(:hover) .skill-value,
 .skill-group:focus .skill:not(:focus) .skill-value {
     animation: removeSkillBar 2s forwards;
@@ -562,6 +649,7 @@ p {
     from {
         width: 0;
     }
+
     to {
         width: var(--skill-width);
     }
@@ -571,16 +659,18 @@ p {
     from {
         width: var(--skill-width);
     }
+
     to {
         width: 0;
         /* background: linear-gradient(to right, #0d0d0d, #6e6e6d);  */
-    }   
+    }
 }
 
 @keyframes glowEffect {
     from {
-        box-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(255,255,255,0.8), 0 0 30px rgba(255,255,255,0.8);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
     }
+
     to {
         text-shadow: none;
     }
