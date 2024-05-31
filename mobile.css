@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Nunito", sans-serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, li, form, figure, button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* GRID FORMATTING */
+
+body {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "contact"
+        "footer";
+}
+
+/* Default to dark mode */
+body {
+    background-color: #091B29;
+    color: #ffffff;
+}
+
+section {
+    min-height: 100vh;
+    min-width: 100vh;
+    color: white;
+    scroll-snap-align: start;
+    /* overflow-y: scroll; */
+}
+
+header {
+    grid-area: header;
+    background: red;
+}
+
+main {
+    grid-area: main;
+    background-color: yellow;
+}
+
+contact {
+    grid-area: contact;
+    background-color: blue;
+}
