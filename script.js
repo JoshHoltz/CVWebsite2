@@ -11,6 +11,19 @@ for (const project of projectColumns) {
     });
 }
 
+// WELCOME
+let type = document.getElementById('type')
+
+function OnOff() {
+  if (type.style.visibility === 'hidden') {
+      type.style.visibility = 'visible'
+  } else {
+    type.style.visibility = 'hidden'
+  }
+}
+
+setInterval(OnOff, 500)
+
 function toggleProjectTemplate(templateId) {
     let projectTemplate = document.getElementById(templateId);
     if (projectTemplate.style.display === 'none' || projectTemplate.style.display === '') {
