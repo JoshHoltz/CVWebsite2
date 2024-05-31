@@ -23,3 +23,11 @@ function toggleProjectTemplate(templateId) {
       projectTemplate.style.display = 'none';
     }
   }
+
+//   MAV BAR
+let navTitle = document.getElementsById('.nav-item1');
+navTitle.addEventListener('click', function() {
+    alert('hello');
+    document.body.style.backgroundColor = 'red';
+    console.log('test')
+});

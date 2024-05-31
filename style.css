@@ -11,14 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-p,
-li,
-form,
-figure,
-button {
+h1, h2, h3, p, li, form, figure, button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
 }
@@ -64,17 +57,13 @@ contact {
     background-color: blue;
 }
 
-footer {
-    grid-area: footer;
-    background-color: green;
-}
-
 /* BACKGROUND COLOUR FORMATTING */
 
 .snapping {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    width: 100vw;
 }
 
 .one {
@@ -97,6 +86,11 @@ footer {
     height: 100vh;
 }
 
+.three {
+    background-color: #091B29;
+    height: 100vh;
+}
+
 .four {
     background-color: #091B29;
     display: flex;
@@ -106,37 +100,14 @@ footer {
     overflow-y: hidden;
 }
 
-.three {
-    background-color: #091B29;
-    height: 100vh;
-}
-
 /* NAV */
 .navbar {
     color: #fff;
     position: fixed;
     min-height: 100vh;
-    top: 0;
     right: 0;
-    z-index: 999;
     display: flex;
     align-items: center;
-}
-
-@keyframes footer_boarder_bottom {
-
-    0%,
-    100% {
-        border-bottom: 0.3em solid #141435;
-    }
-
-    50% {
-        border-bottom: 0.3em solid #2727b2;
-    }
-
-    80% {
-        border-bottom: 0.3em solid #4b4bd7;
-    }
 }
 
 ul {
@@ -156,54 +127,7 @@ li a {
     padding: 1em 1em;
 }
 
-.LeftAsideNav {
-    float: left;
-    width: 10em;
-}
-
-.RightAsideNav {
-    float: right;
-    width: 10em;
-}
-
-.nav-link {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    padding-bottom: 2px;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    display: block;
-    background: rgb(255, 255, 255);
-    transition: width 0.5s ease;
-
-}
-
-.nav-link:hover::after {
-    width: 40%;
-}
-
-.welcome-icons {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-style: none;
-}
-
-.welcome-icons i:hover {
-    color: #5757ec;
-    text-decoration: none;
-    font-size: 2em;
-    transform: scale(1.05);
-}
-
-
-/* SECTION ONE - HELLO */
+/* SECTION ONE - Home */
 
 .title {
     margin-left: 3em;
@@ -230,6 +154,7 @@ li a {
 }
 
 .homePageButtons:hover {
+    cursor: pointer;
     background-color: #19017d;
     transform: scale(1.1);
     text-decoration: underline;
@@ -244,134 +169,9 @@ li a {
 }
 
 .welcomeIcons a:hover {
+    cursor: pointer;
     color: #d81414;
     text-decoration: none;
-}
-
-/* SECTION FOUR - PROJECTS */
-
-.projectsTitle {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5em;
-    color: red;
-}
-
-.projectText {
-    max-width: 800px;
-    display: flex;
-    text-align: center;
-}
-
-.GridServices {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 50vh;
-    /* padding-top: 1em; */
-}
-
-.column {
-    padding: 0 0.5em 0.5em 0.5em;
-    text-align: center;
-}
-
-.projectType {
-    /* width: 100%; */
-    height: 100%;
-    padding: 2em 1.0em;
-    background: linear-gradient(#ffffff 50%, #fe2c2c 50%);
-    background-size: 100% 200%;
-    background-position: 0 2.5%;
-    border-radius: 0.5em;
-    transition: 0.5s;
-}
-
-h1.projectName {
-    font-size: 2em;
-    font-weight: 700;
-    color: #1f194c;
-    /* margin-bottom: 1em; */
-}
-
-h1.projectSub {
-    /* margin-bottom: 1em; */
-    color: #1f194c;
-}
-
-p {
-    color: #575a7b;
-    font-size: 0.95em;
-    line-height: 1.6em;
-    letter-spacing: 0.03em;
-}
-
-.icon-wrapper {
-    background-color: #fe2c2c;
-    margin: auto;
-    font-size: 2em;
-    height: 2.5em;
-    width: 2.5em;
-    color: #ffffff;
-    border-radius: 100%;
-    display: grid;
-    align-items: center;
-    transition: 0.5s;
-}
-
-.serviceType:hover {
-    background-position: 0 100%;
-}
-
-.serviceType:hover .icon-wrapper {
-    background-color: #ffffff;
-    color: #fe2c2c;
-}
-
-.serviceType:hover h1.ServiceName {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-.serviceType:hover h1.ServicePrice {
-    color: #ffffff;
-}
-
-
-.serviceType:hover p {
-    color: #f0f0f0;
-}
-
-@media screen and (min-width: 768px) {
-    section {
-        padding: 5em 2em;
-    }
-
-    .column {
-        flex: 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    section {
-        padding: 1em 3em;
-    }
-
-    .column {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-    }
-}
-
-.column:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
-
-.enlarged ~ .column {
-    transform: scale(0.9);
-    filter: blur(2px);
-    opacity: 0.5;
 }
 
 /* ABOUT SECTION */
@@ -410,7 +210,6 @@ p {
 }
 
 .box p {
-    /* color: rgb(0, 0, 0); */
     color: white;
     letter-spacing: 1px;
 }
@@ -469,10 +268,6 @@ p {
     transform: translateY(-3px);
 }
 
-/* .textContainer:hover {
-    background-position: 0 100%;
-} */
-
 .textContainer>div {
     max-height: 100%;
     /* overflow-y: auto; */
@@ -484,7 +279,89 @@ p {
 }
 
 
+/* SECTION FOUR - PROJECTS */
 
+.projectsTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    color: red;
+}
+
+.projectText {
+    max-width: 800px;
+    display: flex;
+    text-align: center;
+}
+
+.projectGrid {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    /* padding-top: 1em; */
+}
+
+.column {
+    padding: 0 0.5em 0.5em 0.5em;
+    text-align: center;
+}
+
+.projectType {
+    height: 100%;
+    padding: 2em 1.0em;
+    background: linear-gradient(#ffffff 50%, #fe2c2c 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+
+h1.projectName {
+    font-size: 2em;
+    font-weight: 700;
+    color: #1f194c;
+}
+
+h1.projectSub {
+    color: #1f194c;
+}
+
+p {
+    color: #575a7b;
+    font-size: 0.95em;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+}
+
+.icon-wrapper {
+    background-color: #fe2c2c;
+    margin: auto;
+    font-size: 2em;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 100%;
+    display: grid;
+    align-items: center;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em 3em;
+    }
+
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+.enlarged ~ .column {
+    transform: scale(0.9);
+    filter: blur(2px);
+    opacity: 0.5;
+}
 
 /* MY SKILLS  */
 .four {
