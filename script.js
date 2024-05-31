@@ -23,6 +23,3 @@ function toggleProjectTemplate(templateId) {
       projectTemplate.style.display = 'none';
     }
   }
-
-
-
