@@ -1,5 +1,4 @@
 // PROJECT
-
 let projectColumns = document.querySelectorAll('.column');
 
 for (const project of projectColumns) {
