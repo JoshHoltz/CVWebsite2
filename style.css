@@ -204,6 +204,11 @@ li a {
 }
 
 /* ABOUT SECTION */
+
+.mobileAboutSlider {
+    display: none;
+}
+
 .container {
     display: flex;
     justify-content: center;
