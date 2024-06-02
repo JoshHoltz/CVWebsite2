@@ -60,15 +60,6 @@ function toggleProjectTemplate(templateId) {
     }
   }
 
-// ANCHOR LINKS
-// const anchors = document.getElementsByClassName('anchor');
-    
-// for (let i = 0; i < anchors.length; i++) {
-//   anchors[i].addEventListener('click', function() {
-
-//   });
-// }
-
 //   MAV BAR
 let navTitle = document.getElementsById('.nav-item1');
 navTitle.addEventListener('click', function() {
@@ -76,3 +67,11 @@ navTitle.addEventListener('click', function() {
     document.body.style.backgroundColor = 'red';
     console.log('test')
 });
+
+// MOBILE NAV BAR
+let mobileNavPress = document.getElementById('mobileNavBarIcon');
+let mobileNavDisplay = mobileNavPress.addEventListener('click', showMobileNav);
+
+function showMobileNav() {
+  console.log('test');
+}
