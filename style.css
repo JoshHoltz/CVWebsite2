@@ -131,6 +131,23 @@ li a {
     padding: 1em 1em;
 }
 
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.home, .about, .projects, .contact {
+    display: none;
+    position: absolute;
+    left: -200px;
+    transition: left 1 ease;
+}
+
+.slide-in {
+    display: block !important;
+    left: -55px; /* Slide to on-screen position */
+}
+
 /* SECTION ONE - Home */
 
 .title {

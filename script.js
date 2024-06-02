@@ -11,6 +11,29 @@ for (const project of projectColumns) {
     });
 }
 
+// ANCHORS
+let navItems = document.querySelectorAll('.nav-item');
+
+navItems.forEach((navItem) => { //apply a EL to each navItem
+    navItem.addEventListener('mouseover', showAnchorTitle);
+    navItem.addEventListener('mouseout', hideAnchorTitle);
+});
+
+function showAnchorTitle(event) {
+    let targetId = event.target.getAttribute('href').substring(1);
+    let anchorTitle = document.querySelector(`.${targetId}`);
+    // anchorTitle.style.display = 'block';
+    anchorTitle.classList.add('slide-in');
+}
+
+function hideAnchorTitle(event) {
+    let targetId = event.target.getAttribute('href').substring(1);
+    let anchorTitle = document.querySelector(`.${targetId}`);
+    // anchorTitle.style.display = 'none';
+    anchorTitle.classList.remove('slide-in');
+}
+
+
 // WELCOME
 let type = document.getElementById('type')
 
