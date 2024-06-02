@@ -69,6 +69,10 @@ contact {
     margin-right: 1em;
 }
 
+#navBarContents {
+    display: none;
+}
+
 /* HOME */
 .title {
     /* margin-top: 3em; */
@@ -139,4 +143,28 @@ contact {
 /* ABOUT */
 .imgContainer {
     display: none;
+}
+
+.aboutTitle {
+    color: red;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.mobileAboutSlider {
+    display: flex;
+    background-color: red;
+}
+
+.aboutslider {
+    min-width: 50%;
+}
+
+.infoSectionMe, .infoSectionSkills {
+    display: none;
+}
+
+.aboutMeMobile, .skillsMobile {
+    min-width: 100%;
+    background-color: transparent;
 }

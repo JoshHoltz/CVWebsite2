@@ -69,9 +69,29 @@ navTitle.addEventListener('click', function() {
 });
 
 // MOBILE NAV BAR
-let mobileNavPress = document.getElementById('mobileNavBarIcon');
-let mobileNavDisplay = mobileNavPress.addEventListener('click', showMobileNav);
+// let mobileNavPress = document.getElementById('mobileNavBarIcon');
+// let mobileNavDisplay = mobileNavPress.addEventListener('click', showMobileNav);
 
-function showMobileNav() {
-  console.log('test');
+// function showMobileNav() {
+//   console.log('test');
+// }
+
+const mobileNavBarIcon = document.getElementsById('mobileNavBarIcon');
+let navBarContent = document.getElemenstById('navBarContents')
+
+mobileNavBarIcon.addEventListener('click', displayNavContents)
+
+function displayNavContents() {
+  navBarContent.style.display = 'block'
+};
+
+//  MOBILE ABOUT ME
+
+let infoMemobile = document.getElementsByClassName('aboutMeMobile')
+let mobileInfoClick = infoMemobile.addEventListener('click', showAboutMeInfo)
+let infoSectionMe = document.getElementsByClassName('infoSectionMe')
+
+function showAboutMeInfo() {
+  infoSectionMe.style.display = 'block'
 }
+
