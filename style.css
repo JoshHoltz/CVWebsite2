@@ -426,6 +426,28 @@ p {
     background-color: green;
 }
 
+.projectHeader {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 1em;
+}
+
+.projectHeader button {
+    color: #000;
+    font-size: 1em;
+	background: none;
+	border: none;
+	cursor: pointer;
+    font-weight: bold;
+}
+
+.projectHeader button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transform: translateY(-3px);
+}
+
 /* MY SKILLS  */
 .four {
     display: grid;
