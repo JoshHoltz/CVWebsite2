@@ -8,6 +8,7 @@ for (const project of projectColumns) {
             projectTitle.classList.remove('enlarged');
         }
         project.classList.add('enlarged');
+        
     });
 }
 

@@ -98,8 +98,6 @@
 
     <section class="three" id="projects">
 
-      <div id="backgroundOverlay" class="backgroundOverlay"></div>
-
       <h1 class="projectsTitle">PROJECTS</h1>
       <!-- <p class="projectText">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere voluptatem sequi voluptas nemo. Labore,
@@ -107,9 +105,23 @@
       </p> -->
       
       <div class="projectTemplateClicked" id="projectTemplate1">
-        <button onclick="toggleProjectTemplate('projectTemplate1')">Toggle Project Template</button>
-        <h1>info1</h1>
-      </div>
+        <div class="specificProjectGrid">
+            <div class="projectHeader">
+                <button onclick="toggleProjectTemplate('projectTemplate1')">Toggle Project Template</button>
+            </div>
+            <div class="projectMain">
+                <div class="projectColumn leftside">
+                    <h1>Project 1</h1>
+                </div>
+                <div class="projectColumn rightside">
+                    <h1>Project 2</h1>
+                </div>
+            </div>
+            <div class="projectFooter">
+                <h1>Footer</h1>
+            </div>
+        </div>
+    </div>
     
       <div class="projectTemplateClicked" id="projectTemplate2">
         <button onclick="toggleProjectTemplate('projectTemplate2')">Toggle Project Template</button>

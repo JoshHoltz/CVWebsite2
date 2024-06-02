@@ -368,6 +368,64 @@ p {
     opacity: 0.5;
 }
 
+/* PROJECT TEMPLATE */
+.projectTemplateClicked {
+    display: none; 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(178, 25, 25); 
+    /* justify-content: center; 
+    align-items: center;  */
+    color: #000;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: blur(500px);
+    border: 5px solid #000; 
+    /* box-shadow: 80px 80px rgba(0, 0, 0, 0.431); */
+}
+
+
+.specifcProjectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    grid-template-areas:
+    "projectHeader"
+    "projectMain"
+    "projectFooter";
+}
+
+.projectHeader {
+    background-color: yellow;
+    min-width: 80vw;
+    min-height: 10%;
+}
+
+.projectMain {
+    display: flex;
+    flex-direction: row;
+    /* background-color: orange; */
+    min-height: 70%;
+}
+
+.projectColumn {
+    flex: 1; 
+}
+
+.rightside {
+    /* min-width: 50%; */
+    background-color: pink;
+}
+
+.leftside {
+    /* min-width: 50%; */
+    background-color: green;
+}
+
 /* MY SKILLS  */
 .four {
     display: grid;
@@ -376,7 +434,6 @@ p {
     justify-content: center;
     /* max-width: 80%; */
     height: 100vh;
-    /* Set the height of the grid section to the full viewport height */
 }
 
 .skillsTitle {
@@ -565,25 +622,6 @@ p {
         grid-template-columns: 1fr;
         padding: 0 1em;
     }
-}
-
-/* PROJECT TEMPLATE */
-.projectTemplateClicked {
-    display: none; 
-    position: fixed; 
-    top: 50%;
-    left: 50%;
-    width: 80vw;
-    height: 80vh;
-    background-color: rgb(178, 25, 25); 
-    justify-content: center; 
-    align-items: center; 
-    color: #000;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    border: blur(500px);
-    border: 5px solid #000; 
-    box-shadow: 80px 80px rgba(0, 0, 0, 0.431);
 }
 
   
