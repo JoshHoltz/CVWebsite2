@@ -61,27 +61,40 @@ function toggleProjectTemplate(templateId) {
   }
 
 //   MAV BAR
-let navTitle = document.getElementsById('.nav-item1');
-navTitle.addEventListener('click', function() {
-    alert('hello');
-    document.body.style.backgroundColor = 'red';
-    console.log('test')
-});
+// let navTitle = document.getElementsById('.nav-item1');
+// navTitle.addEventListener('click', function() {
+//     alert('hello');
+//     document.body.style.backgroundColor = 'red';
+//     console.log('test')
+// });
 
-// MOBILE NAV BAR
-// let mobileNavPress = document.getElementById('mobileNavBarIcon');
-// let mobileNavDisplay = mobileNavPress.addEventListener('click', showMobileNav);
 
-// function showMobileNav() {
-//   console.log('test');
-// }
 
-const mobileNavBarIcon = document.getElementsById('mobileNavBarIcon');
-let navBarContent = document.getElemenstById('navBarContents')
+// const mobileNavBarIcon = document.getElementsById('mobileNavBarIcon');
+// let navBarContent = document.getElemenstById('navBarContents')
 
-mobileNavBarIcon.addEventListener('click', displayNavContents)
+// mobileNavBarIcon.addEventListener('click', displayNavContents)
 
-function displayNavContents() {
-  navBarContent.style.display = 'block'
-};
+// function displayNavContents() {
+//   navBarContent.style.display = 'block'
+// };
 
+// ABOUT ME JS
+let aboutMeClick = document.getElementById('mobileAboutMePara');
+let infoMeMobile = document.getElementById('mobileAboutMe');
+
+let skillsMeMobile = document.getElementById('mobileSkillsMe');
+let mySkillsElement = document.querySelector('.infoSectionSkills');
+
+function showAboutMe() {
+  infoMeMobile.style.display = 'block';
+  mySkillsElement.style.display = 'none';
+}
+
+function showSkillsAboutMe() {
+  mySkillsElement.style.display = 'block';
+  infoMeMobile.style.display = 'none';
+}
+
+aboutMeClick.addEventListener('click', showAboutMe);
+skillsMeMobile.addEventListener('click', showSkillsAboutMe);

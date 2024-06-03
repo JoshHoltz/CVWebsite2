@@ -161,16 +161,24 @@ contact {
     min-width: 50%;
 }
 
-.infoSectionMe, .infoSectionSkills {
+/* .infoSectionMe, .infoSectionSkills {
     display: none;
     padding: 1em;
-  }
+  } */
 
 .aboutMeMobile, .skillsMobile {
     min-width: 100%;
     min-height: 5vh;
     background-color: blue;
     border-radius: 50px;
+}
+
+/* #mobileAboutMe {
+    display: none;
+  }
+   */
+.infoSectionSkills {
+    display: none;
 }
 
 /* PROJECTS */
