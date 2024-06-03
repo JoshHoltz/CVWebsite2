@@ -568,6 +568,10 @@ p {
 }
 
 /* Skill Bar Colors */
+.skillscolumn {
+    display: none;
+}
+
 .html {
     width: 90%;
     background: linear-gradient(to right, #4caf50, #8bc34a);

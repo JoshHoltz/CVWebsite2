@@ -288,3 +288,103 @@ contact {
 #projectTemplate6 {
     display: none;
 }
+
+/* MY SKILLS  */
+.four {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.skillsTitle {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.SkillsHeading {
+    font-size: 2.5em;
+    color: red;
+}
+
+.skillsTitle p {
+    color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Skillssubheading {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #ff6347;
+}
+
+.skillsGrid {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 0 5%;
+}
+
+.skill-group {
+    background-color: #091B29;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.skill {
+    margin-bottom: 1em;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #444;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    height: 2em;
+}
+
+.skill-value {
+    padding: 8px;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 4px;
+}
+
+/* Skill Bar Colors */
+.html {
+    width: 90%;
+    background: linear-gradient(to right, #4caf50, #8bc34a);
+}
+
+.css {
+    width: 70%;
+    background: linear-gradient(to right, #2196f3, #03a9f4);
+}
+
+.javascript {
+    width: 65%;
+    background: linear-gradient(to right, #ffeb3b, #ffc107);
+}
+
+.python {
+    width: 60%;
+    background: linear-gradient(to right, #ff5722, #ff9800);
+}
+
+.sql {
+    width: 75%;
+    background: linear-gradient(to right, #673ab7, #9c27b0);
+}
+
+.acrobat {
+    width: 60%;
+    background: linear-gradient(to right, #e91e63, #f44336);
+}
