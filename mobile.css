@@ -142,7 +142,7 @@ contact {
 }
 
 /* ABOUT */
-.imgContainer {
+/* .imgContainer {
     display: none;
 }
 
@@ -161,10 +161,9 @@ contact {
     min-width: 50%;
 }
 
-/* .infoSectionMe, .infoSectionSkills {
-    display: none;
+.infoSectionMe, .infoSectionSkills {
     padding: 1em;
-  } */
+  }
 
 .aboutMeMobile, .skillsMobile {
     min-width: 100%;
@@ -173,13 +172,93 @@ contact {
     border-radius: 50px;
 }
 
-/* #mobileAboutMe {
+.textContainer {
+    padding: 1em;
+} */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box {
+    margin: 10px 0;
+  }
+  
+  .imgContainer img {
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
     display: none;
   }
-   */
-.infoSectionSkills {
+  
+  .textContainer {
+    text-align: center;
+  }
+  
+  .aboutTitle {
+    font-size: 24px;
+    color: #01579b;
+    margin-bottom: 10px;
+  }
+  
+  .aboutSubtitle {
+    font-size: 18px;
+    color: #0277bd;
+    margin-bottom: 20px;
+  }
+  
+  .aboutslider button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .aboutslider button:hover {
+    background-color: #0277bd;
+  }
+  
+  .infoSectionMe, .infoSectionSkills {
     display: none;
-}
+    padding: 10px;
+    background-color: #b3e5fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .infoSectionMe p, .infoSectionSkills p {
+    color: #01579b;
+  }
+  
+  @media (min-width: 768px) {
+    .aboutSection {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .textContainer {
+      max-width: 60%;
+    }
+  
+    .imgContainer {
+      max-width: 30%;
+    }
+  }
 
 /* PROJECTS */
 

@@ -205,6 +205,10 @@ li a {
 
 /* ABOUT SECTION */
 
+.aboutslider {
+    display: none;
+}
+
 .mobileAboutSlider {
     display: none;
 }

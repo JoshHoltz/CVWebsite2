@@ -80,21 +80,17 @@ function toggleProjectTemplate(templateId) {
 // };
 
 // ABOUT ME JS
-let aboutMeClick = document.getElementById('mobileAboutMePara');
-let infoMeMobile = document.getElementById('mobileAboutMe');
 
-let skillsMeMobile = document.getElementById('mobileSkillsMe');
-let mySkillsElement = document.querySelector('.infoSectionSkills');
+document.getElementById('mobileAboutMePara').addEventListener('click', function() {
+  const aboutMeSection = document.querySelector('.infoSectionMe');
+  const skillsSection = document.querySelector('.infoSectionSkills');
+  aboutMeSection.style.display = aboutMeSection.style.display === 'block' ? 'none' : 'block';
+  skillsSection.style.display = 'none';
+});
 
-function showAboutMe() {
-  infoMeMobile.style.display = 'block';
-  mySkillsElement.style.display = 'none';
-}
-
-function showSkillsAboutMe() {
-  mySkillsElement.style.display = 'block';
-  infoMeMobile.style.display = 'none';
-}
-
-aboutMeClick.addEventListener('click', showAboutMe);
-skillsMeMobile.addEventListener('click', showSkillsAboutMe);
+document.getElementById('mobileSkillsMe').addEventListener('click', function() {
+  const aboutMeSection = document.querySelector('.infoSectionMe');
+  const skillsSection = document.querySelector('.infoSectionSkills');
+  skillsSection.style.display = skillsSection.style.display === 'block' ? 'none' : 'block';
+  aboutMeSection.style.display = 'none';
+});
