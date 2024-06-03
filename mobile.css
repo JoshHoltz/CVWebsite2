@@ -290,6 +290,10 @@ contact {
 }
 
 /* MY SKILLS  */
+.mobileHideHobbies {
+    display: none;
+}
+
 .four {
     display: grid;
     place-items: center;
