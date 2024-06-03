@@ -123,7 +123,6 @@ contact {
     color: #ffffff;
     text-decoration: none;
     font-size: 2em;
-    margin-bottom: 10em;
 }
 
 .semiContainer {
@@ -146,14 +145,15 @@ contact {
     left: 50%;
     transform: translateX(-50%);
     /* z-index: 2;  */
-    min-width: 100vw;
+    /* min-width: 100vw; */
     min-height: 90%;
-    /* overflow-x: hidden; */
+    overflow-Y: hidden;
 }
 
 /* ABOUT */
 
-.aboutMeMobile, .skillsMobile {
+.aboutMeMobile,
+.skillsMobile {
     min-width: 100%;
     min-height: 5vh;
 }
@@ -228,66 +228,57 @@ contact {
 
 /* PROJECTS */
 
+.three {
+    padding: 2em;
+    display: flex;
+    overflow-y: scroll;
+}
+
 .projectTemplateClicked {
     display: none;
 }
 
+
+.projectGrid {
+    min-width: 100em;
+    max-height: q0vh;
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 2em;
+}
+
+.column {
+    background-color: #973333;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 2em);
+    min-width: 100vw;
+    max-height: 70vh;
+}
+
+.projectType {
+    text-align: center;
+}
+
+.icon-wrapper {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.projectName {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.projectSub {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
 .mobileProjectP {
-    display: none;
-}
-
-.faqSection {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    /* border-radius: 10px; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.faqItem {
-    margin-bottom: 20px;
-}
-
-.faqHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #007BFF;
-    border-radius: 5px;
-}
-
-.faqHeader .icon-wrapper {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;/
-}
-
-.faqHeader .icon-wrapper i {
-    font-size: 24px;
-}
-
-.faqHeader button {
-    background-color: #0056b3;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.faqContent {
-    /* display: none; */
-    padding: 10px;
-    /* border: 1px solid #007BFF; */
-    /* border-top: none; */
-    /* border-radius: 0 0 5px 5px; */
-    background-color: #091A28;
-}
-
-#projectTemplate6 {
-    display: none;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 /* MY SKILLS  */
