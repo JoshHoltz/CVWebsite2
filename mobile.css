@@ -11,7 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, p, li, form, figure, button {
+h1,
+h2,
+h3,
+p,
+li,
+form,
+figure,
+button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
 }
@@ -85,18 +92,20 @@ contact {
     font-size: 2em;
 }
 
-.mobileHomeSubtitle, .mobileHomePara {
+.mobileHomeSubtitle,
+.mobileHomePara {
     margin-top: 1em;
-    color: transparent; 
-    position: relative; 
+    color: transparent;
+    position: relative;
 }
 
-.mobileHomeSubtitle::after, .mobileHomePara::after {
+.mobileHomeSubtitle::after,
+.mobileHomePara::after {
     content: 'Im A Web Development & Cyber Security Student';
-    color: rgb(255, 255, 255); 
-    display: block; 
-    position: absolute; 
-    top: 0; 
+    color: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    top: 0;
 }
 
 .homePageButtons {
@@ -123,9 +132,9 @@ contact {
 }
 
 .semi-circle {
-    margin-top: 10em; 
+    margin-top: 10em;
     width: 100vw;
-    height: 50vh; 
+    height: 50vh;
     background-color: blue;
     border-radius: 100px 100px 0 0;
 }
@@ -136,52 +145,25 @@ contact {
     left: 50%;
     transform: translateX(-50%);
     /* z-index: 2;  */
-    min-width: 100vw; 
-    min-height: 90%; 
+    min-width: 100vw;
+    min-height: 90%;
     /* overflow-x: hidden; */
 }
 
 /* ABOUT */
-/* .imgContainer {
-    display: none;
-}
-
-.aboutTitle {
-    color: red;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-.mobileAboutSlider {
-    display: flex;
-    border-radius: 50px;
-}
-
-.aboutslider {
-    min-width: 50%;
-}
-
-.infoSectionMe, .infoSectionSkills {
-    padding: 1em;
-  }
 
 .aboutMeMobile, .skillsMobile {
     min-width: 100%;
     min-height: 5vh;
-    background-color: blue;
-    border-radius: 50px;
 }
-
-.textContainer {
-    padding: 1em;
-} */
 
 .container {
     width: 90%;
     margin: 0 auto;
-  }
-  
-  .aboutSection {
+}
+
+.aboutSection {
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,76 +171,59 @@ contact {
     background-color: #e0f7fa;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .box {
+}
+
+.box {
     margin: 10px 0;
-  }
-  
-  .imgContainer img {
+}
+
+.imgContainer img {
     width: 100%;
     height: 20%;
     border-radius: 10px;
     display: none;
-  }
-  
-  .textContainer {
+}
+
+.textContainer {
     text-align: center;
-  }
-  
-  .aboutTitle {
+}
+
+.aboutTitle {
     font-size: 24px;
     color: #01579b;
     margin-bottom: 10px;
-  }
-  
-  .aboutSubtitle {
+}
+
+.aboutSubtitle {
     font-size: 18px;
     color: #0277bd;
     margin-bottom: 20px;
-  }
-  
-  .aboutslider button {
+}
+
+.aboutslider button {
     background-color: #0288d1;
-    color: white;
     border: none;
-    padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .aboutslider button:hover {
-    background-color: #0277bd;
-  }
-  
-  .infoSectionMe, .infoSectionSkills {
-    display: none;
+}
+
+.infoSectionMe,
+.infoSectionSkills {
+    /* display: none; */
     padding: 10px;
     background-color: #b3e5fc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .infoSectionMe p, .infoSectionSkills p {
+}
+
+.infoSectionSkills {
+    display: none;
+}
+
+.infoSectionMe p,
+.infoSectionSkills p {
     color: #01579b;
-  }
-  
-  @media (min-width: 768px) {
-    .aboutSection {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-    }
-  
-    .textContainer {
-      max-width: 60%;
-    }
-  
-    .imgContainer {
-      max-width: 30%;
-    }
-  }
+}
 
 /* PROJECTS */
 
@@ -276,7 +241,7 @@ contact {
     padding: 20px;
     background-color: #fff;
     /* border-radius: 10px; */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .faqItem {
