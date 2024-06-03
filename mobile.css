@@ -138,6 +138,7 @@ contact {
     /* z-index: 2;  */
     min-width: 100vw; 
     min-height: 90%; 
+    /* overflow-x: hidden; */
 }
 
 /* ABOUT */
@@ -153,7 +154,7 @@ contact {
 
 .mobileAboutSlider {
     display: flex;
-    background-color: red;
+    border-radius: 50px;
 }
 
 .aboutslider {
@@ -162,9 +163,76 @@ contact {
 
 .infoSectionMe, .infoSectionSkills {
     display: none;
-}
+    padding: 1em;
+  }
 
 .aboutMeMobile, .skillsMobile {
     min-width: 100%;
-    background-color: transparent;
+    min-height: 5vh;
+    background-color: blue;
+    border-radius: 50px;
+}
+
+/* PROJECTS */
+
+.projectTemplateClicked {
+    display: none;
+}
+
+.mobileProjectP {
+    display: none;
+}
+
+.faqSection {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faqItem {
+    margin-bottom: 20px;
+}
+
+.faqHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+.faqHeader .icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;/
+}
+
+.faqHeader .icon-wrapper i {
+    font-size: 24px;
+}
+
+.faqHeader button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faqContent {
+    /* display: none; */
+    padding: 10px;
+    /* border: 1px solid #007BFF; */
+    /* border-top: none; */
+    /* border-radius: 0 0 5px 5px; */
+    background-color: #091A28;
+}
+
+#projectTemplate6 {
+    display: none;
 }

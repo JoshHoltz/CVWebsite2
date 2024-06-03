@@ -85,13 +85,3 @@ function displayNavContents() {
   navBarContent.style.display = 'block'
 };
 
-//  MOBILE ABOUT ME
-
-let infoMemobile = document.getElementsByClassName('aboutMeMobile')
-let mobileInfoClick = infoMemobile.addEventListener('click', showAboutMeInfo)
-let infoSectionMe = document.getElementsByClassName('infoSectionMe')
-
-function showAboutMeInfo() {
-  infoSectionMe.style.display = 'block'
-}
-
