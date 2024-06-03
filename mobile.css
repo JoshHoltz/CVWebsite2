@@ -230,7 +230,6 @@ contact {
 
 .three {
     padding: 2em;
-    display: flex;
     overflow-y: scroll;
 }
 
@@ -238,21 +237,16 @@ contact {
     display: none;
 }
 
-
 .projectGrid {
-    min-width: 100em;
-    max-height: q0vh;
     display: flex;
-    flex-wrap: no-wrap;
     gap: 2em;
 }
 
 .column {
-    background-color: #973333;
+    background-color: #01579b;
     border-radius: 8px;
     padding: 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 2em);
     min-width: 100vw;
     max-height: 70vh;
 }
