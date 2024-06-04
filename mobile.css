@@ -70,15 +70,30 @@ contact {
 }
 
 .mobileNav {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1em;
-    margin-right: 1em;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    z-index: 2; 
+    color: white; 
 }
 
 #navBarContents {
-    display: none;
+    text-align: center;
+    background-color: black;
+    /* display: none; */
+    z-index: 2;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
 }
+
+#navBarContents i  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
 
 /* HOME */
 .title {
