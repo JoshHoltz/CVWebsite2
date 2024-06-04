@@ -61,23 +61,20 @@ function toggleProjectTemplate(templateId) {
   }
 
 //   MAV BAR
-// let navTitle = document.getElementsById('.nav-item1');
-// navTitle.addEventListener('click', function() {
-//     alert('hello');
-//     document.body.style.backgroundColor = 'red';
-//     console.log('test')
-// });
+const Navicon = document.getElementById('mobileNavBarIcon');
+const navBarContents = document.getElementById('navBarContents');
+let isDisplayed = false;
 
+Navicon.addEventListener('click', () => {
+  if (isDisplayed) {
+    navBarContents.style.display = 'none';
+    isDisplayed = false;
+  } else {
+    navBarContents.style.display = 'block';
+    isDisplayed = true;
+  }
+});
 
-
-// const mobileNavBarIcon = document.getElementsById('mobileNavBarIcon');
-// let navBarContent = document.getElemenstById('navBarContents')
-
-// mobileNavBarIcon.addEventListener('click', displayNavContents)
-
-// function displayNavContents() {
-//   navBarContent.style.display = 'block'
-// };
 
 // ABOUT ME JS
 
