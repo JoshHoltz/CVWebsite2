@@ -80,7 +80,7 @@ contact {
 #navBarContents {
     text-align: center;
     background-color: black;
-    /* display: none; */
+    display: none;
     z-index: 2;
     min-height: 100vh;
     min-width: 100vw;
