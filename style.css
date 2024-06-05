@@ -507,11 +507,15 @@ p {
     flex-direction: column;
     align-items: center;
 
+    background: linear-gradient(#ffffff 50%, #fe2c2c 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+
     min-width: 16em;
     min-height: 13em;
     margin-left: 1em;
-    background-color: #fe2c2c;
-    color: white;
+    /* background-color: #fe2c2c; */
+    color: #1f194c;
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -530,16 +534,18 @@ p {
 
 .contactTitle h1 {
     font-size: 1.5em;
+    color: #1f194c;
 }
 
 .contactColumn a {
-    /* color: #d1d1ff; */
-    color: #fff;
+    color: #1f194c;
     font-weight: bold;
-    /* text-decoration: none; */
     font-size: 1.2em;
 }
 
 .contactColumn a:hover {
     text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: 1s ease-in-out;
 }
