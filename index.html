@@ -467,7 +467,7 @@
             <h1>sdfgsdgf</h1>
           </div> -->
 
-          <div class="form-container">
+          <!-- <div class="form-container">
             <form action="/submit" method="post">
                 <div class="form-row">
                     <label for="first-name">First Name:</label>
@@ -488,7 +488,23 @@
                 <div class="form-row">
                     <button type="submit">Submit</button>
                 </div>
-        </div>
+        </div> -->
+
+        <form action="/send_email" method="post">
+          <label for="email">From: </label>
+          <input type="email" name="from" id="from">
+
+          <label for="to">To: </label>
+          <input type="email" name="to" id="to">
+
+          <label for="subject">Subject: </label>
+          <input type="text" name="subject" id="subject">
+
+          <label for="message">Message: </label>
+          <textarea id="message" name="message"></textarea>
+          
+          <input type="submit" value="Send">
+        </form>
       </section>
 
 </body>

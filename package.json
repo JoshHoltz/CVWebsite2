@@ -10,6 +10,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "nodemailer": "^6.9.13"
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
+    "path": "^0.12.7"
   }
 }

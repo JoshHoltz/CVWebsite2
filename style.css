@@ -566,9 +566,9 @@ p {
     margin-top: 3em; 
 }
 
-.form-container {
+/* .form-container { */
     /* background-color: #fff; */
-}
+/* } */
 
 form {
     display: flex;
