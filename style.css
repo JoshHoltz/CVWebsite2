@@ -502,6 +502,10 @@ p {
 }
 
 .contactColumn {
+    margin-bottom: 3em;
+}
+
+.contactColumn {
     float: left;
     display: flex;
     flex-direction: column;
@@ -548,4 +552,59 @@ p {
     font-weight: bold;
     font-size: 1.3em;
     transition: 1s ease-in-out;
+}
+
+.form-container {
+    /* display: flex; 
+    justify-content: center;
+    align-items: center; */
+    /* background-color: #a54f4f; */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* width: 400px; */
+    margin-top: 3em; 
+}
+
+.form-container {
+    /* background-color: #fff; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.form-row label {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #0056b3;
 }
