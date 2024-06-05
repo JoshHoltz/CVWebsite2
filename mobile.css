@@ -70,6 +70,7 @@ contact {
 }
 
 .mobileNav {
+    display: none;
     position: fixed;
     top: 0;
     width: 50%;
@@ -78,6 +79,7 @@ contact {
 }
 
 #navBarContents {
+    display: none;
     text-align: center;
     background-color: black;
     display: none;
