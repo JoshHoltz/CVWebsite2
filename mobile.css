@@ -46,7 +46,7 @@ section {
     max-width: 100vw;
     color: white;
     scroll-snap-align: start;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 
 header {
@@ -182,6 +182,7 @@ contact {
 }
 
 .aboutSection {
+    margin-top: 2em;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -249,6 +250,7 @@ contact {
 .three {
     /* padding: 2em; */
     overflow-y: scroll;
+    min-height: 50vh;
 }
 
 .projectsTitle {
@@ -260,10 +262,11 @@ contact {
 }
 
 .projectGrid {
-    padding: 2em;
+    padding: 1em; 
     display: flex;
-    gap: 2em;
-    min-height: 50vh;
+    gap: 1em; 
+    min-height: 40vh;
+    overflow-y: auto; 
 }
 
 .column {
@@ -272,7 +275,7 @@ contact {
     padding: 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     min-width: 100vw;
-    max-height: 60vh;
+    max-height: 70vh;
 }
 
 .projectType {
@@ -478,11 +481,9 @@ contact {
 .four {
     background-color: #091B29;
     display: flex;
-    min-height: 30vh;
-    /* place-items: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    display: grid; */
+    min-height: 30vh;
 }
 
 .contactRow {
@@ -490,11 +491,12 @@ contact {
 }
 
 .form-container {
+    margin-top: 2em;
     min-width: 90vw;
     /* max-width: 600px; */
     padding: 1em;
     /* background-color: #fff; */
-    background: linear-gradient(#ffffff 50%, #fe2c2c 50%);
+    background: linear-gradient(#ffffff 50%, #0288D1 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
     border-radius: 8px;
@@ -534,4 +536,9 @@ contact {
     border-bottom: 2px solid #ff0000;
     transition: background-color 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
     /* min-width: 100%; */
+}
+
+.emailHeading {
+    display: block;
+    text-align: center;
 }
