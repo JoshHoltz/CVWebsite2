@@ -36,6 +36,14 @@ window.onload = function() {
       }
   }
 
+  typingElement.addEventListener("click", replayEffect);
+
+  function replayEffect() {
+    typingElement.innerHTML = "";
+    index = 0;
+    typeEffect();
+}
+
   typeEffect();
 };
 
