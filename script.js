@@ -91,3 +91,24 @@ document.getElementById('mobileSkillsMe').addEventListener('click', function() {
   skillsSection.style.display = skillsSection.style.display === 'block' ? 'none' : 'block';
   aboutMeSection.style.display = 'none';
 });
+
+// EMAIL PROCESS
+function processForm(event) {
+  event.preventDefault(); // Prevent the form from submitting the default way
+
+  const subjectInput = document.getElementById('subject').value;
+  const bodyInput = document.getElementById('body').value;
+
+  // Replace + with spaces
+  const subjectProcessed = subjectInput.replace(/\+/g, ' ');
+
+  // Encode the subject and body
+  const subjectEncoded = encodeURIComponent(subjectProcessed);
+  const bodyEncoded = encodeURIComponent(bodyInput);
+
+  // Construct the mailto URL
+  const mailtoLink = `mailto:contact@jholtz.co.uk?subject=${subjectEncoded}&body=${bodyEncoded}`;
+
+  // Open the mailto link
+  window.location.href = mailtoLink;
+}

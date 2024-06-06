@@ -490,23 +490,13 @@
                 </div>
         </div> -->
 
-        <form action="/send_email" method="post">
-          <label for="email">From: </label>
-          <input type="email" name="from" id="from">
-
-          <label for="to">To: </label>
-          <input type="email" name="to" id="to">
-
-          <label for="subject">Subject: </label>
-          <input type="text" name="subject" id="subject">
-
-          <label for="message">Message: </label>
-          <textarea id="message" name="message"></textarea>
-          
-          <input type="submit" value="Send">
-        </form>
-      </section>
-
+          <form class="form" onsubmit="processForm(event)">
+            <label for="subject">Enter your Subject Line</label>
+            <input class="form-inputText" type="text" name="subject" id="subject" placeholder="please add your subject line...">
+            <textarea class="form-textarea" name="body" id="body" placeholder="please add your message..." rows="5" cols="50"></textarea>
+            <input class="button" type="submit" value="Submit">
+          </form>
+        </section>
 </body>
 
 </html>
