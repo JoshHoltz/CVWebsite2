@@ -111,3 +111,21 @@ function processForm(event) {
   // OPEN USER MAIL CLIENT
   window.location.href = mailtoLink;
 }
+
+// type try
+window.onload = function() {
+  const text = "<h2> And I'm A Web Development & Cyber Security Student! </h2>";
+  let index = 0;
+  const speed = 100; 
+  const typingElement = document.getElementById("typingEffect");
+
+  function typeEffect() {
+      if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeEffect, speed);
+      }
+  }
+
+  typeEffect();
+};
