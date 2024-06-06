@@ -1,16 +1,3 @@
-// PROJECT
-let projectColumns = document.querySelectorAll('.column');
-
-for (const project of projectColumns) {
-    project.addEventListener('mouseover', function () {
-        for (const projectTitle of projectColumns) {
-            projectTitle.classList.remove('enlarged');
-        }
-        project.classList.add('enlarged');
-        
-    });
-}
-
 // ANCHORS
 let navItems = document.querySelectorAll('.nav-item');
 
@@ -34,15 +21,37 @@ function hideAnchorTitle(event) {
 }
 
 
-// WELCOME
-let type = document.getElementById('type')
+// WELCOME TYPING TEXT
+window.onload = function() {
+  const text = "<h2> And I'm A Web Development & Cyber Security Student! </h2>";
+  let index = 0;
+  const timeoutSpeed = 100; 
+  const typingElement = document.getElementById("typingEffect");
 
-function OnOff() {
-  if (type.style.visibility === 'hidden') {
-      type.style.visibility = 'visible'
-  } else {
-    type.style.visibility = 'hidden'
+  function typeEffect() {
+      if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeEffect, timeoutSpeed);
+      }
   }
+
+  typeEffect();
+};
+
+
+
+// PROJECT
+let projectColumns = document.querySelectorAll('.column');
+
+for (const project of projectColumns) {
+    project.addEventListener('mouseover', function () {
+        for (const projectTitle of projectColumns) {
+            projectTitle.classList.remove('enlarged');
+        }
+        project.classList.add('enlarged');
+        
+    });
 }
 
 setInterval(OnOff, 500)
@@ -111,21 +120,3 @@ function processForm(event) {
   // OPEN USER MAIL CLIENT
   window.location.href = mailtoLink;
 }
-
-// type try
-window.onload = function() {
-  const text = "<h2> And I'm A Web Development & Cyber Security Student! </h2>";
-  let index = 0;
-  const speed = 100; 
-  const typingElement = document.getElementById("typingEffect");
-
-  function typeEffect() {
-      if (index < text.length) {
-        typingElement.innerHTML += text.charAt(index);
-          index++;
-          setTimeout(typeEffect, speed);
-      }
-  }
-
-  typeEffect();
-};
