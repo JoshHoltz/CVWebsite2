@@ -493,6 +493,7 @@ contact {
 .form-container {
     margin-top: 2em;
     min-width: 90vw;
+    margin-bottom: 2em;
     /* max-width: 600px; */
     padding: 1em;
     /* background-color: #fff; */
