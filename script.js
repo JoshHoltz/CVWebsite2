@@ -99,16 +99,15 @@ function processForm(event) {
   const subjectInput = document.getElementById('subject').value;
   const bodyInput = document.getElementById('body').value;
 
-  // Replace + with spaces
+  // REPLKACE
   const subjectProcessed = subjectInput.replace(/\+/g, ' ');
 
-  // Encode the subject and body
   const subjectEncoded = encodeURIComponent(subjectProcessed);
   const bodyEncoded = encodeURIComponent(bodyInput);
 
-  // Construct the mailto URL
+  // MAILTO
   const mailtoLink = `mailto:contact@jholtz.co.uk?subject=${subjectEncoded}&body=${bodyEncoded}`;
 
-  // Open the mailto link
+  // OPEN USER MAIL CLIENT
   window.location.href = mailtoLink;
 }
