@@ -47,8 +47,6 @@ window.onload = function() {
   typeEffect();
 };
 
-
-
 // PROJECT
 let projectColumns = document.querySelectorAll('.column');
 
