@@ -215,6 +215,7 @@ contact {
 }
 
 .aboutSubtitle {
+    /* display: none; */
     font-size: 18px;
     color: #0277bd;
     margin-bottom: 20px;
