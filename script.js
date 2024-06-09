@@ -47,6 +47,22 @@ window.onload = function() {
   typeEffect();
 };
 
+// ABOUT ME
+document.getElementById('mobileAboutMePara').addEventListener('click', function() {
+  const aboutMeSection = document.getElementById('infoSectionMe');
+  const skillsSection = document.getElementById('infoSectionSkills');
+  aboutMeSection.style.display = aboutMeSection.style.display === 'block' ? 'none' : 'block';
+  skillsSection.style.display = 'none';
+});
+
+document.getElementById('mobileSkillsMe').addEventListener('click', function() {
+  const aboutMeSection = document.getElementById('infoSectionMe');
+  const skillsSection = document.getElementById('infoSectionSkills');
+  skillsSection.style.display = skillsSection.style.display === 'block' ? 'none' : 'block';
+  aboutMeSection.style.display = 'none';
+});
+
+
 // PROJECT
 let projectColumns = document.querySelectorAll('.column');
 
@@ -59,8 +75,6 @@ for (const project of projectColumns) {
         
     });
 }
-
-setInterval(OnOff, 500)
 
 function toggleProjectTemplate(templateId) {
     let projectTemplate = document.getElementById(templateId);
