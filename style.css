@@ -32,10 +32,10 @@ body {
         "footer";
 }
 
-/* Default to dark mode */
 body {
     background-color: #091B29;
     color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 section {
@@ -71,7 +71,7 @@ contact {
 }
 
 .one {
-    background-color: #091B29;
+    /* background-color: #091B29; */
     /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url('resorce/car3.jpg'); */
     background-size: cover;
     background-position: center;
@@ -83,7 +83,7 @@ contact {
 }
 
 .two {
-    background-color: #091B29;
+    /* background-color: #091B29; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -91,7 +91,7 @@ contact {
 }
 
 .three {
-    background-color: #091B29;
+    /* background-color: #091B29; */
     height: 100vh;
 }
 
@@ -494,7 +494,7 @@ p {
 
 /* CONTACT */
 .four {
-    background-color: #091B29;
+    /* background-color: #091B29; */
     display: flex;
     flex-direction: column;
     align-items: center;
