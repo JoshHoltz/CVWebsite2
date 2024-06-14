@@ -657,3 +657,11 @@ p {
     z-index: -1; 
     mix-blend-mode: multiply;
 }
+
+.backgroundImageFooter {
+    position: absolute; 
+    mix-blend-mode: multiply;
+    bottom: 0;
+    transform: scaleY(1);
+    z-index: -1; 
+}
