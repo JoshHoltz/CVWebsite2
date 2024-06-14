@@ -98,6 +98,11 @@ contact {
 
 
 /* HOME */
+
+.backgroundImage {
+    display: none;
+}
+
 .title {
     /* margin-top: 3em; */
     text-align: center;

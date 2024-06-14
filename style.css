@@ -156,6 +156,14 @@ li a {
 
 .title {
     margin-left: 3em;
+    /* position: absolute; */
+    transform: translateY(-90%);
+}
+
+.backgroundImage {
+    mix-blend-mode: multiply;
+    transform: scaleX(-1);
+    transform: scaleY(-1);
 }
 
 .title h1 {
@@ -495,10 +503,13 @@ p {
 /* CONTACT */
 .four {
     /* background-color: #091B29; */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5em;
+    /* min-height: 100vh;
+    overflow: hidden; */
 }
 
 .contactRow {
@@ -634,4 +645,15 @@ p {
 @keyframes blink {
     from, to { border-color: transparent; }
     50% { border-color: rgb(255, 255, 255); }
+}
+
+.homeFooterImg {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    mix-blend-mode: multiply;
 }
