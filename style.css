@@ -330,7 +330,6 @@ li a {
     transition: 0.5s;
 }
 
-
 /* SECTION FOUR - PROJECTS */
 
 .projectsTitle {
@@ -404,16 +403,17 @@ p {
     transition: 0.5s;
 }
 
-@media screen and (min-width: 992px) {
-    section {
-        padding: 1em 3em;
+/* @media screen and (min-width: 768px) and (max-width: 991px) {
+    .projectGrid {
+        flex-direction: flex;
     }
 
     .column {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
+        flex: 1 1 50%; 
+        margin-bottom: 1em;
     }
-}
+} */
+
 
 .enlarged ~ .column {
     transform: scale(0.9);
