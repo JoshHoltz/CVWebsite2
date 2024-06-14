@@ -453,7 +453,7 @@ contact {
 }
 
 .css {
-    width: 70%;
+    width: 90%;
     background: linear-gradient(to right, #2196f3, #03a9f4);
 }
 
@@ -463,17 +463,17 @@ contact {
 }
 
 .python {
-    width: 60%;
+    width: 70%;
     background: linear-gradient(to right, #ff5722, #ff9800);
 }
 
 .sql {
-    width: 75%;
+    width: 70%;
     background: linear-gradient(to right, #673ab7, #9c27b0);
 }
 
 .acrobat {
-    width: 60%;
+    width: 75%;
     background: linear-gradient(to right, #e91e63, #f44336);
 }
 
