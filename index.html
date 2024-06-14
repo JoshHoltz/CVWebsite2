@@ -11,32 +11,8 @@
 </head>
 
 <body>
-  
-  <!--NAV-->
-  <div class="mobileNav">
-    <i id="mobileNavBarIcon" class="fa-solid fa-bars"></i>
 
-    <div id="navBarContents">
-      <ul class="nav-items">
-        <li class="nav-item">
-          <a href="#home" id="nav-item1" class="anchor"><i class="fa-regular fa-circle-dot">Home</i></a>
-        </li>
-        <li class="nav-item">
-          <!-- <p class="about">About</p> -->
-          <a href="#about" id="nav-item2" class="anchor"><i class="fa-regular fa-circle-dot">About</i></a>
-        </li>
-        <li class="nav-item">
-          <!-- <p class="projects">Projects</p> -->
-          <a href="#projects" id="nav-item3" class="anchor"><i class="fa-regular fa-circle-dot">Projects</i></a>
-        </li>
-        <li class="nav-item">
-          <!-- <p class="contact">Contact</p> -->
-          <a href="#contact" id="nav-item4" class="anchor"><i class="fa-regular fa-circle-dot">Contact</i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </div>
+  <!--NAV-->
 
   <nav class="navbar">
     <ul class="nav-items">
@@ -57,7 +33,6 @@
         <a href="#contact" id="nav-item4" class="anchor"><i class="fa-regular fa-circle-dot"></i></a>
       </li>
     </ul>
-    </div>
   </nav>
 
 
@@ -71,15 +46,14 @@
       <div class="title">
         <h1>Hello,</h1>
         <h1 class="subtitle">I'm Josh Holtz</h1>
-        <h2 class="mobileHomeSubtitle">
-            <span id="typingEffect"></span>
-        </h2>
+        <h2 class="mobileHomeSubtitle" id="typingEffect"></h2>
         <!-- <p class="mobileHomePara">I'm Currently a First Year @ The University of Northampton</p> -->
-    
 
         <div class="homeButtons">
-          <a href="#contact"><button class="homePageButtons" id="talkToMeBtn">Talk to Me</button> 
-            <a href="https://drive.google.com/file/d/168dx_VBoA5c3dhap9KGLpH-qFgJJ_rFd/view?usp=drive_link" target="_blank"><button class="homePageButtons">My CV</button></a>
+          <a class="homePageButtons" href="#contact">Talk to Me</a>
+          <!-- <a class="homePageButtons" href="#contact">Talk to Me</a> -->
+          <button class="homePageButtons"><a href="https://drive.google.com/file/d/168dx_VBoA5c3dhap9KGLpH-qFgJJ_rFd/view?usp=drive_link" target="_blank" style="text-decoration: none; color: inherit;">My CV</a>
+          </button>
         </div>
 
         <div class="welcomeIcons">
@@ -93,7 +67,7 @@
       </div>
       <div class="semiContainer">
         <div class="semi-circle"></div>
-        <img class="overlay-image" src="" alt="Overlay Image">
+        <img class="overlay-image" src="placeholder" alt="Overlay Image">
       </div>
     </section>
 
@@ -103,7 +77,8 @@
       <div class="container">
         <div class="aboutSection">
           <div class="box imgContainer">
-            <img class="aboutImg" src="https://placehold.co/700"> <!--src="resorce/placeholder.jpg"-->
+            <img class="aboutImg" src="https://placehold.co/700" alt="placeholder-image">
+            <!--src="resorce/placeholder.jpg"-->
           </div>
           <div class="box textContainer">
             <div>
@@ -308,47 +283,53 @@
         </div>
       </div>
 
-      <div class="projectTemplateClicked" id="projectTemplate2">
+      <div class="projectTemplateClicked">
+        <button onclick="toggleProjectTemplate('projectTemplate1')">Toggle Project Template</button>
+        <h1>inf12</h1>
+      </div>
+
+      <div class="projectTemplateClicked">
         <button onclick="toggleProjectTemplate('projectTemplate2')">Toggle Project Template</button>
         <h1>info2</h1>
       </div>
 
-      <div class="projectTemplateClicked" id="projectTemplate3">
+      <div class="projectTemplateClicked">
         <button onclick="toggleProjectTemplate('projectTemplate3')">Toggle Project Template</button>
         <h1>info3</h1>
       </div>
 
-      <div class="projectTemplateClicked" id="projectTemplate4">
+      <div class="projectTemplateClicked">
         <button onclick="toggleProjectTemplate('projectTemplate4')">Toggle Project Template</button>
         <h1>info4</h1>
       </div>
 
-      <div class="projectTemplateClicked" id="projectTemplate5">
+      <div class="projectTemplateClicked">
         <button onclick="toggleProjectTemplate('projectTemplate5')">Toggle Project Template</button>
         <h1>info5</h1>
       </div>
 
-      <div class="projectTemplateClicked" id="projectTemplate6">
+      <div class="projectTemplateClicked">
         <button onclick="toggleProjectTemplate('projectTemplate6')">Toggle Project Template</button>
         <h1>info6</h1>
       </div>
 
 
       <!-- <section class="projectGrid"> -->
-        <div class="projectGrid">
+      <div class="projectGrid">
 
         <div class="column" id="project1">
           <div class="projectType">
             <div class="icon-wrapper">
               <i class="fa-regular fa-window-maximize"></i>
-           </div>
+            </div>
             <h1 class="projectName">Portfolio Website</h1>
             <!-- <button onclick="toggleProjectTemplate('projectTemplate1')">Toggle Project Template</button> -->
             <h1 class="projectSub">Y1 Semester 2</h1>
             <p class="mobileProjectP">
               During my time at university one of my first web development projects was to create a portfolio
               website.<br>
-              My first website I made was in fact a portfolio website. However, throughout university, I have changed and
+              My first website I made was in fact a portfolio website. However, throughout university, I have changed
+              and
               developed my website to reflect me as I go.<br>
               Therefore, as my skillset improved, so did my website. I found this was a good way to consolidate my
               knowledge from my studies.
@@ -383,11 +364,13 @@
             <!-- <button onclick="toggleProjectTemplate('projectTemplate3')">Toggle Project Template</button> -->
             <h1 class="projectSub">Y2 Semester 2</h1>
             <p class="mobileProjectP">
-              Through my efforts I put in during my first year at University I was approached by a Senior Lecturers, they asked me to help out and be a support Lecturer in their classes. <br>
+              Through my efforts I put in during my first year at University I was approached by a Senior Lecturers,
+              they asked me to help out and be a support Lecturer in their classes. <br>
               I said yes, as I found it a good way to help out and also consolidate my knowledge at the same time. <br>
-              I am currently waiting for the University Year to resume before proceeding with this.     
-              I have also been given the permission to also independently run timetabled sessions for those students needing extra help. 
-           </p>
+              I am currently waiting for the University Year to resume before proceeding with this.
+              I have also been given the permission to also independently run timetabled sessions for those students
+              needing extra help.
+            </p>
           </div>
         </div>
         <div class="column" id="project4">
@@ -399,8 +382,11 @@
             <!-- <button onclick="toggleProjectTemplate('projectTemplate4')">Toggle Project Template</button> -->
             <h1 class="projectSub">Y1 Semester 1</h1>
             <p class="mobileProjectP">
-              During my first year at University we was set a group project in Software Engineering. We was tasked with Requirements Engineering and project plans and client communication. <br>
-              Due to my skills I thought that this project would not just be a good match for me, but also due to the abilty to be able to Project Manage and work as a team and be the driving force for the teams success. <br>
+              During my first year at University we was set a group project in Software Engineering. We was tasked with
+              Requirements Engineering and project plans and client communication. <br>
+              Due to my skills I thought that this project would not just be a good match for me, but also due to the
+              abilty to be able to Project Manage and work as a team and be the driving force for the teams success.
+              <br>
               At the end of the project we came 1st with 94.5%.
               Through this I have been more confident to take on other Lead roles in Group Projects.
             </p>
@@ -415,9 +401,12 @@
             <!-- <button onclick="toggleProjectTemplate('projectTemplate5')">Toggle Project Template</button> -->
             <h1 class="projectSub">Extracurricular</h1>
             <p class="mobileProjectP">
-              I am currently learning the Tailwind CSS framework. I decided to learn a framework so I am able to take my skills that much further. <br>
-              Although we do not learn Tailwind CSS at university I find when in industry knowing a framework would be beneficial, especially when coming to Rapid Development. <br>
-              I am consolidating my Tailwind knowledge by doing a series of mini projects were I am able to use it freely to understand how to better my Web Development Skills.
+              I am currently learning the Tailwind CSS framework. I decided to learn a framework so I am able to take my
+              skills that much further. <br>
+              Although we do not learn Tailwind CSS at university I find when in industry knowing a framework would be
+              beneficial, especially when coming to Rapid Development. <br>
+              I am consolidating my Tailwind knowledge by doing a series of mini projects were I am able to use it
+              freely to understand how to better my Web Development Skills.
             </p>
           </div>
         </div>
@@ -430,60 +419,74 @@
             <!-- <button onclick="toggleProjectTemplate('projectTemplate6')">Toggle Project Template</button> -->
             <h1 class="projectSub">2022/2024</h1>
             <p>
-              During my A Levels, I dedicated significant time to supporting SEND students and volunteered to assist those requiring additional help. I accumulated over 120 hours of volunteer work, providing valuable support to those in need. <br>
-              This experience not only honed my communication and empathy skills but also enhanced my ability to work collaboratively and adapt to diverse needs. <br>
-              This experience allowed me to understand the significant impact I can have in helping others. Consequently, I am committed to continuing this effort during my time at university and beyond.          </p>
+              During my A Levels, I dedicated significant time to supporting SEND students and volunteered to assist
+              those requiring additional help. I accumulated over 120 hours of volunteer work, providing valuable
+              support to those in need. <br>
+              This experience not only honed my communication and empathy skills but also enhanced my ability to work
+              collaboratively and adapt to diverse needs. <br>
+              This experience allowed me to understand the significant impact I can have in helping others.
+              Consequently, I am committed to continuing this effort during my time at university and beyond. </p>
           </div>
         </div>
       </div>
     </section>
 
 
-      <section class="four" id="contact">
-        <h1 class="emailHeading">Email Me</h1>
+    <section class="four" id="contact">
+      <h1 class="emailHeading">Email Me</h1>
 
-        <div class="contactRow">
-            <div class="contactColumn">
-                <i class="fa-regular fa-envelope"></i>
-                <div class="contactTitle"><h2>Email</h2></div>
-                <a href="mailto:contact@jholtz.co.uk">contact@jholtz.co.uk</a>
-            </div>
-            <div class="contactColumn">
-                <i class="fa-brands fa-linkedin"></i>
-                <div class="contactTitle"><h2>LinkedIn</h2></div>
-                <a href="https://www.linkedin.com/in/joshua-holtz1" target="_blank">@Joshua Holtz</a>
-            </div>
-            <div class="contactColumn">
-                <i class="fa-brands fa-square-github"></i>
-                <div class="contactTitle"><h2>GitHub</h2></div>
-                <a href="https://github.com/JoshHoltz" target="_blank">@JoshHoltz</a>
-            </div>
-            <!-- <div class="contactColumn">
+      <div class="contactRow">
+        <div class="contactColumn">
+          <i class="fa-regular fa-envelope"></i>
+          <div class="contactTitle">
+            <h2>Email</h2>
+          </div>
+          <a href="mailto:contact@jholtz.co.uk">contact@jholtz.co.uk</a>
+        </div>
+        <div class="contactColumn">
+          <i class="fa-brands fa-linkedin"></i>
+          <div class="contactTitle">
+            <h2>LinkedIn</h2>
+          </div>
+          <a href="https://www.linkedin.com/in/joshua-holtz1" target="_blank">@Joshua Holtz</a>
+        </div>
+        <div class="contactColumn">
+          <i class="fa-brands fa-square-github"></i>
+          <div class="contactTitle">
+            <h2>GitHub</h2>
+          </div>
+          <a href="https://github.com/JoshHoltz" target="_blank">@JoshHoltz</a>
+        </div>
+        <!-- <div class="contactColumn">
               <div class="contactTitle"><h2>GitHub</h2></div>
             </div> -->
-        </div>
+      </div>
 
-        <div class="form-container">
-          <h1 class="contactHeading">Wanting to Email Me?</h1>
-            <form class="form" onsubmit="processForm(event)">
-                <div class="form-row">
-                    <label for="subject">Enter your Subject Line</label>
-                    <input class="form-inputText" type="text" name="subject" id="subject" placeholder="Please add your subject line...">
-                </div>
-                <div class="form-row">
-                    <label for="body">Enter your Message</label>
-                    <textarea class="form-textarea" name="body" id="body" placeholder="Please add your message..." rows="5" cols="50"></textarea>
-                </div>
-                <div class="form-row">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-        <div class="backgroundImageFooter">
-          <img src="resorce/background-home.jpg" alt="" class="homeFooterImg">
-        </div>
-        <!-- <img src="resorce/background-home.jpg" alt="" class="homeFooterImg"> -->
+      <div class="form-container">
+        <h1 class="contactHeading">Wanting to Email Me?</h1>
+        <form class="form" onsubmit="processForm(event)">
+          <div class="form-row">
+            <label for="subject">Enter your Subject Line</label>
+            <input class="form-inputText" type="text" name="subject" id="subject"
+              placeholder="Please add your subject line...">
+          </div>
+          <div class="form-row">
+            <label for="body">Enter your Message</label>
+            <textarea class="form-textarea" name="body" id="body" placeholder="Please add your message..." rows="5"
+              cols="50"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="backgroundImageFooter">
+        <img src="resorce/background-home.jpg" alt="" class="homeFooterImg">
+      </div>
+    </section>
 
 
-  </body>
+  </div>
+</body>
+
 </html>

@@ -69,14 +69,14 @@ contact {
     display: none;
 }
 
-.mobileNav {
+/* .mobileNav {
     display: none;
     position: fixed;
     top: 0;
     width: 50%;
     z-index: 2; 
     color: white; 
-}
+} */
 
 #navBarContents {
     display: none;
