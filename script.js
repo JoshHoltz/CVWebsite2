@@ -49,15 +49,15 @@ window.onload = function() {
 
 // ABOUT ME
 document.getElementById('mobileAboutMePara').addEventListener('click', function() {
-  const aboutMeSection = document.getElementById('infoSectionMe');
-  const skillsSection = document.getElementById('infoSectionSkills');
+  const aboutMeSection = document.querySelector('.infoSectionMe');
+  const skillsSection = document.querySelector('.infoSectionSkills');
   aboutMeSection.style.display = aboutMeSection.style.display === 'block' ? 'none' : 'block';
   skillsSection.style.display = 'none';
 });
 
 document.getElementById('mobileSkillsMe').addEventListener('click', function() {
-  const aboutMeSection = document.getElementById('infoSectionMe');
-  const skillsSection = document.getElementById('infoSectionSkills');
+  const aboutMeSection = document.querySelector('.infoSectionMe');
+  const skillsSection = document.querySelector('.infoSectionSkills');
   skillsSection.style.display = skillsSection.style.display === 'block' ? 'none' : 'block';
   aboutMeSection.style.display = 'none';
 });
