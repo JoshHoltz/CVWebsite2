@@ -1,3 +1,25 @@
+const options = {
+  root: null,
+  threshold: 0.3
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      typeEffect();
+    } else {
+      entry.target.classList.remove('fade-in');
+    }
+  });
+}, options);
+
+document.querySelectorAll('.section').forEach(section => {
+  observer.observe(section);
+});
+
+
+
 // ANCHORS
 let navItems = document.querySelectorAll('.nav-item');
 
