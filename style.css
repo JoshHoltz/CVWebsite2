@@ -705,6 +705,6 @@ p {
 }
 
 .fade-in img {
-    opacity: 0.1;
+    opacity: 0;
     mix-blend-mode: multiply;
 }
