@@ -7,7 +7,6 @@ const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fade-in');
-      typeEffect();
     } else {
       entry.target.classList.remove('fade-in');
     }
@@ -17,8 +16,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.section').forEach(section => {
   observer.observe(section);
 });
-
-
 
 // ANCHORS
 let navItems = document.querySelectorAll('.nav-item');
