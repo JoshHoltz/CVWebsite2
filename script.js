@@ -47,6 +47,9 @@ window.onload = function() {
   const timeoutSpeed = 100; 
   const typingElement = document.getElementById("typingEffect");
 
+  // Add this line to apply the mobile font-size class
+  typingElement.classList.add("mobile-font-size");
+
   function typeEffect() {
       if (index < text.length) {
         typingElement.innerHTML += text.charAt(index);
@@ -65,6 +68,7 @@ window.onload = function() {
 
   typeEffect();
 };
+
 
 // ABOUT ME
 document.getElementById('mobileAboutMePara').addEventListener('click', function() {
