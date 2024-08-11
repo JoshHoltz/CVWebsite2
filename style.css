@@ -228,6 +228,10 @@ li a {
     display: none;
 }
 
+.welcomeImg {
+    display: none;
+}
+
 /* ABOUT SECTION */
 
 .aboutslider {

@@ -147,7 +147,20 @@ li a {
     padding: 2em;
 }
 
+.welcomeImg {
+    padding-top: 10vh;
+    max-width: 55vw;
+    border-radius: 100%;
+}
+
 /* ABOUT */
+.textContainer {
+    background: linear-gradient(#ffffff00 50%, #fe2c2c 50%);
+    background-size: 100% 200%;
+    background-position: 0 1.5%;
+    border-radius: 0.5em;
+}
+
 .aboutSection {
     display: flex;
     flex-direction: column;
@@ -188,29 +201,43 @@ li a {
     object-fit: cover;
 }
 
+.mobileHideHobbies {
+    display: none;
+}
+
 .infoSectionSkills {
-    display: none; /* SET TO DN FOR NOW? */
+    display: none;
 }
 
-.imgContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.html {
+    width: 90%;
+    background: linear-gradient(to right, #4caf50, #8bc34a);
 }
 
-.textContainer {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(#ffffff00 50%, #fe2c2c 50%);
-    transition: 0.5s;
-    background-size: 100% 200%;
-    background-position: 0 1.5%;
-    border-radius: 0.5em;
+.css {
+    width: 90%;
+    background: linear-gradient(to right, #2196f3, #03a9f4);
 }
 
+.javascript {
+    width: 65%;
+    background: linear-gradient(to right, #ffeb3b, #ffc107);
+}
+
+.python {
+    width: 70%;
+    background: linear-gradient(to right, #ff5722, #ff9800);
+}
+
+.sql {
+    width: 70%;
+    background: linear-gradient(to right, #673ab7, #9c27b0);
+}
+
+.acrobat {
+    width: 75%;
+    background: linear-gradient(to right, #e91e63, #f44336);
+}
 
 /* PROJECTS SECTION */
 .projectType {
@@ -289,8 +316,8 @@ p {
 .contactHeading {
     color: #000;
     text-align: center;
-    font-size: 1.5em; /* Larger heading for better readability */
-    margin-bottom: 1em; /* Add spacing below the heading */
+    font-size: 1.5em; 
+    margin-bottom: 1em; 
 }
 
 .form-row {
