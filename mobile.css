@@ -264,16 +264,13 @@ contact {
     text-align: center;
 }
 
-.projectTemplateClicked {
-    display: none;
-}
-
 .projectGrid {
     padding: 1em; 
     display: flex;
+    margin-bottom: 1em;
     gap: 1em; 
-    min-height: 40vh;
-    overflow-y: auto; 
+    /* min-height: 40vh; */
+    /* overflow-y: auto;  */
 }
 
 .column {
@@ -347,7 +344,6 @@ contact {
 .projectMain {
     display: flex;
     flex-direction: row;
-    /* background-color: orange; */
     min-height: 70%;
 }
 
