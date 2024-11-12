@@ -80,7 +80,6 @@ contact {
 
 .one {
     /* background-color: #091B29; */
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url('resorce/car3.jpg'); */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -173,9 +172,9 @@ li a {
 }
 
 .backgroundImage {
-    mix-blend-mode: multiply;
-    transform: scaleX(-1);
-    transform: scaleY(-1);
+    background-image: url('resorce/IMG_0496.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .title h1 {
@@ -222,10 +221,6 @@ li a {
     cursor: pointer;
     color: #d81414;
     text-decoration: none;
-}
-
-.overlay-image {
-    display: none;
 }
 
 .welcomeImg {
